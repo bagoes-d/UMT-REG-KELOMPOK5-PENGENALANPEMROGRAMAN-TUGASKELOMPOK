@@ -1,0 +1,213 @@
+:root {
+  --utama: #b91c1c;   /* merah elegan */
+  --aksen: #facc15;   /* emas */
+  --bg: #fdfdfd;
+  --putih: #fff;
+  --teks: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--teks);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--utama);
+  color: var(--putih);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--aksen);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: var(--putih);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--aksen);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, var(--utama), #7f1d1d);
+  color: var(--putih);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative; /* tambahan penting */
+}
+
+.logo-hero {
+  width: 180px;  /* dibesarkan */
+  height: auto;  /* biar proporsional */
+  max-width: 60%; /* aman di HP */
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: var(--aksen);
+  height: 30px;
+}
+
+/* Scroll-down Arrow */
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* selalu di bawah hero */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--putih);
+  text-decoration: none;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+}
+
+/* Section */
+main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+section {
+  background: var(--putih);
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: var(--utama);
+  margin-bottom: 20px;
+  border-left: 6px solid var(--aksen);
+  padding-left: 12px;
+}
+
+/* Grid anggota */
+.anggota-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 20px var(--aksen);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: var(--utama);
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #444;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f8f8;
+  border-top: 3px solid var(--utama);
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}

@@ -1,0 +1,91 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #b91c1c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Konten utama */
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.materi-card {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.materi-card h2 {
+  color: #b91c1c;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#materi-desc h3 {
+  margin-top: 20px;
+  color: #0d47a1;
+  border-left: 4px solid #facc15;
+  padding-left: 10px;
+}
+
+#materi-desc p {
+  margin: 10px 0;
+}
+
+#materi-desc ul {
+  margin: 10px 0 20px 25px;
+  list-style: disc;
+}
+
+#materi-desc li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #eee;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
