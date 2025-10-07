@@ -18,7 +18,7 @@ const materiData = {
             <li><b>Koneksi internet</b> → banyak perangkat bisa memakai satu jaringan internet.</li>
           </ul>
           <p><i>Tujuan utama:</i> efisiensi, kemudahan akses informasi, dan komunikasi cepat.</p>
-        `
+        `,
       },
       {
         subtitle: "2. Jenis-Jenis Jaringan (berdasarkan jangkauan)",
@@ -28,7 +28,7 @@ const materiData = {
             <li><b>MAN</b> → mencakup kota atau kampus besar.</li>
             <li><b>WAN</b> → sangat luas, bahkan antar negara. Internet = WAN terbesar.</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "3. Topologi Jaringan",
@@ -39,7 +39,7 @@ const materiData = {
             <li><b>Ring</b> → melingkar, data satu arah. Kalau satu rusak, bisa terganggu.</li>
             <li><b>Mesh</b> → semua perangkat saling terhubung. Handal tapi mahal.</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "4. Perangkat Jaringan",
@@ -51,7 +51,7 @@ const materiData = {
             <li><b>Modem</b> → hubungkan komputer ke internet via ISP.</li>
             <li><b>Access Point</b> → sediakan koneksi Wi-Fi.</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "5. Protokol dan Alamat Jaringan",
@@ -69,12 +69,12 @@ const materiData = {
             <li>MAC Address → alamat fisik kartu jaringan</li>
             <li>DNS → ubah domain ke IP (contoh: google.com → 142.250.190.78)</li>
           </ul>
-        `
-      }
-    ]
+        `,
+      },
+    ],
   },
 
-sistemoperasi: {
+  sistemoperasi: {
     title: "Sistem Operasi",
     sections: [
       {
@@ -83,7 +83,7 @@ sistemoperasi: {
           <p>Sistem operasi (OS) adalah perangkat lunak utama yang menghubungkan pengguna,
            aplikasi, dan perangkat keras. Tanpa OS, komputer atau ponsel tidak dapat 
            digunakan dengan efektif.</p>
-        `
+        `,
       },
       {
         subtitle: "2. Fungsi Utama Sistem Operasi",
@@ -96,7 +96,7 @@ sistemoperasi: {
             <li><b>Keamanan & Akses</b> → melindungi data dengan password/hak akses.</li>
             <li><b>User Interface</b> → menyediakan antarmuka (CLI/GUI).</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "3. Jenis Sistem Operasi",
@@ -108,7 +108,7 @@ sistemoperasi: {
             <li><b>Real-Time</b> → respon cepat (robot, pesawat, medis).</li>
             <li><b>Embedded</b> → untuk perangkat khusus (ATM, IoT, smartphone).</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "4. Contoh OS",
@@ -119,7 +119,7 @@ sistemoperasi: {
             <li><b>Server</b> → Unix,Linux,Server</li>
             <li><b>Embedded</b> → RTOS, VxWorks</li>
           </ul>
-        `
+        `,
       },
       {
         subtitle: "5. Struktur OS",
@@ -130,12 +130,54 @@ sistemoperasi: {
             <li><b>File System</b> → Pengelolaan Data</li>
             <li><b>Device Driver</b> → Pengendali perangkat Keras</li>
           </ul>
-        `
-      }
-    ]
-  }
-};
+        `,
+      },
+    ],
+  },
 
+  cryptocurrency: {
+    title: "Cryptocurrency",
+    sections: [
+      {
+        subtitle: "1. Pengertian Cryptocurrency",
+        content:
+          "<p>Cryptocurrency adalah mata uang digital yang menggunakan teknologi blockchain dan kriptografi untuk menjamin keamanan transaksi, mengontrol penciptaan unit baru, dan memverifikasi transfer aset. </p>",
+      },
+      {
+        subtitle: "2. Pengertian Block-Chain",
+        content: `
+          <p>Blockchain adalah teknologi penyimpanan dan pencatatan data digital yang tersusun dari rangkaian blok-blok data yang saling terhubung dan diamankan dengan kriptografi.
+Setiap blok berisi informasi transaksi dan terdistribusi ke seluruh jaringan komputer (node), sehingga transparan, aman, dan tidak dapat diubah tanpa persetujuan seluruh jaringan.</p>
+        `,
+      },
+      {
+        subtitle: "3. Komponen pada Cryptocurrency",
+        content: `
+          <ul>
+            <li><b>Block</b> → berisi data transaksi, waktu, dan kode unik (hash).</li>
+            <li><b>Chain</b> → setiap blok terhubung ke blok sebelumnya seperti membentuk rantai.</li>
+            <li><b>Desentralisasi</b> → Tidak ada server pusat, data disebar pada setiap node.</li>
+            <li><b>Security</b> → sulit diubah karena setiap blok terkunci dengan kriptografi</li>
+            <li><b>Transparent</b> → semua transaksi bisa dilihat publik, tapi identitas anonim.</li>
+            <li><b>Smart Contract</b> → program otomatis berjalan di blockchain tanpa perantara.</li>
+          </ul>
+        `,
+      },
+      {
+        subtitle: "4. Jenis Cryptocurrency",
+        content: `
+          <ul>
+            <li><b>Bitcoin (BTC)</b> → Cryptocurrency pertama dan paling terkenal, digunakan sebagai alat tukar dan penyimpan nilai.</li>
+            <li><b>Ethereum (ETH)</b> → Fokus pada smart contract dan aplikasi terdesentralisasi (DApp)</li>
+            <li><b>Binance Coin (BNB)</b> → Digunakan di ekosistem Binance untuk biaya transaksi dan layanan.</li>
+            <li><b>Tether (USDT)</b> → Stablecoin yang nilainya dipatok ke dolar AS (1 USDT ≈ 1 USD).</li>
+            <li><b>Solana (SOL)</b> → Dikenal karena kecepatan transaksi yang tinggi dan biaya rendah.</li>
+          </ul>
+        `,
+      },
+    ],
+  },
+};
 
 // ambil parameter dari URL, contoh: materi.html?materi=jaringan
 const params = new URLSearchParams(window.location.search);
@@ -146,7 +188,7 @@ if (materiData[materiKey]) {
   const materi = materiData[materiKey];
   titleEl.textContent = materi.title;
 
-  materi.sections.forEach(sec => {
+  materi.sections.forEach((sec) => {
     const sectionEl = document.createElement("div");
 
     const subtitleEl = document.createElement("h3");
@@ -161,5 +203,6 @@ if (materiData[materiKey]) {
   });
 } else {
   titleEl.textContent = "Materi Tidak Ditemukan";
-  descEl.innerHTML = "<p style='color:red'>Silakan pilih materi yang tersedia.</p>";
+  descEl.innerHTML =
+    "<p style='color:red'>Silakan pilih materi yang tersedia.</p>";
 }
