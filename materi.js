@@ -177,6 +177,102 @@ Setiap blok berisi informasi transaksi dan terdistribusi ke seluruh jaringan kom
       },
     ],
   },
+  python: {
+    title: "Python",
+    sections: [
+      {
+        subtitle: "1. Pengertian Python",
+        content:
+          "<p>Python adalah bahasa pemrograman tingkat tinggi yang serbaguna, mudah dibaca, dan berorientasi objek. Bahasa ini diciptakan oleh Guido van Rossum dan dirilis pada tahun 1991.Python dirancang dengan penekanan kuat pada keterbacaan kode (readability), seringkali menggunakan sintaks yang memungkinkan programmer untuk mengungkapkan konsep dalam baris kode yang lebih sedikit dibandingkan bahasa lain. Hal ini membuatnya ideal untuk pemula. </p>",
+      },
+      {
+        subtitle: "2. Sifat Utama",
+        content: `
+          <ul>
+          <li><b>Interpreted</b> (Diterjemahkan): Kode Python dijalankan baris demi baris, yang mempermudah debugging (pencarian kesalahan).</li>
+          <li><b>Dynamically</b> Typed (Pengetikan Dinamis): Anda tidak perlu mendeklarasikan tipe data suatu variabel (misalnya, bilangan bulat, teks) sebelum menggunakannya. Tipe data ditentukan saat runtime.</li>
+          <li><b>Cross-platform</b> (Lintas-platform): Kode yang ditulis di satu sistem operasi (seperti Windows) umumnya dapat berjalan di sistem operasi lain (seperti macOS atau Linux) tanpa banyak perubahan.</li>
+          .</ul>
+        `,
+        
+      },
+      {
+        subtitle: "3. Kegunaan Dan Aplikasi",
+        content: `
+          <ul>
+          <p>Fleksibilitas Python menjadikannya pilihan utama di berbagai bidang:</p>
+          <li>Pengembangan Web (Backend) : Digunakan untuk membangun sisi server dari aplikasi web yang kuat.</li>
+          <li>Pembelajaran Mesin (Machine Learning) & AI : Bahasa dominan dalam pengembangan model AI dan Deep Learning.</li>
+          <li>Pengembangan Perangkat Lunak : Umum	Digunakan sebagai "bahasa penghubung" dan untuk membuat prototype cepat.</li>
+          </ul>
+        
+        `
+      }
+    ],
+  },
+  
+  sistemindustri: {
+    title: "Materi Sistem Industri",
+    sections: [
+      {
+        subtitle: "1. Pengertian Sistem Industri",
+        content: `
+          <p>Sistem Industri adalah disiplin ilmu rekayasa yang menerapkan prinsip-prinsip sistem untuk merancang, 
+          meningkatkan, dan mengelola kompleksitas operasi suatu organisasi, baik itu pabrik manufaktur maupun penyedia jasa
+          Inti dari pendekatan ini adalah melihat keseluruhan organisasi—dari pemasok bahan baku hingga pelanggan akhir—sebagai
+          satu sistem terpadu (integrated system). Daripada fokus pada satu bagian (misalnya, hanya mesin atau hanya karyawan),
+          sistem industri berfokus pada interaksi, aliran, dan hubungan antar komponen untuk mencapai kinerja optimal.</p>
+        `,
+      },
+      {
+        subtitle: "2. Faktor Manusia (Man/Personnel)",
+        content: `
+        <p>Ini bukan hanya soal jumlah pekerja, tetapi juga tentang produktivitas, ergonomi, dan keselamatan.</p>
+          <ul>
+            <li><b>Ergonomi:</b> → Perancangan stasiun kerja, alat, dan prosedur agar sesuai dengan
+            kemampuan fisik dan mental pekerja, meminimalkan kelelahan dan risiko cedera.</li>
+            <li><b>Pengukuran Kerja:</b> → Mengukur waktu baku yang dibutuhkan untuk menyelesaikan tugas,
+            penting untuk perencanaan kapasitas dan penetapan standar upah.</li>
+            <li><b>Kepuasan Kerja: </b> → Motivasi dan keterlibatan pekerja sangat memengaruhi kualitas dan efisiensi.</li>
+          </ul>
+        `,
+      },
+      {
+        subtitle: "3. Material dan Rantai Pasok (Material & Supply Chain)",
+        content: `
+        <p>Fokus pada pergerakan material secara keseluruhan, mulai dari pengadaan hingga produk jadi didistribusikan.</p>
+          <ul>
+            <li><b>Manajemen Inventaris:</b> → Menentukan kapan harus memesan dan berapa banyak, untuk menghindari kelebihan stok (biaya penyimpanan)
+             dan kekurangan stok (kehilangan penjualan).</li>
+            <li><b>Logistik:</b> → Merancang jaringan transportasi, gudang, dan penyimpanan agar pengiriman cepat dan biaya rendah.</li>
+          </ul>
+        `,
+      },
+      {
+        subtitle: "4. Mesin, Peralatan, dan Energi (Machine & Energy)",
+        content: `
+        <p>Fokus pada pemanfaatan aset fisik secara maksimal.</p>
+          <ul>
+            <li><b>Perawatan (Maintenance):</b> → Menerapkan strategi perawatan prediktif atau pencegahan untuk meminimalkan
+            waktu henti (kerusakan mesin tak terduga) yang mahal.</li>
+            <li><b>Kapasitas:</b> → Menentukan kapasitas produksi maksimum mesin dan mengidentifikasi bottleneck
+            (titik hambatan) dalam aliran proses.</li>
+            <li><b>Efisiensi Energi:</b> → Menganalisis dan mengurangi konsumsi energi dalam proses manufaktur.</li>
+          </ul>
+        `,
+      },
+      {
+        subtitle: "5. Metode dan Informasi (Method & Information System)",
+        content: `
+          <p>Metode adalah "otak" dari sistem, dan informasi adalah "saraf" yang menghubungkannya.</p>
+          <ul>
+            <li><b>Tata Letak Fasilitas (Facility Layout):</b> → Merancang penempatan mesin, departemen, dan gudang untuk meminimalkan jarak perpindahan material.</li>
+            <li><b>Sistem Informasi Manajemen (MIS):</b> → Penggunaan software (seperti ERP atau MES) untuk mengumpulkan data real-time, memfasilitasi komunikasi
+            antar departemen, dan mendukung pengambilan keputusan.</li>
+        `,
+      },
+    ],
+  },
 };
 
 // ambil parameter dari URL, contoh: materi.html?materi=jaringan
