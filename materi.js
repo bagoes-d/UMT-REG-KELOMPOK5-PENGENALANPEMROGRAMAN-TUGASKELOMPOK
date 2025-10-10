@@ -215,7 +215,7 @@ Setiap blok berisi informasi transaksi dan terdistribusi ke seluruh jaringan kom
     title: "Materi Sistem Industri",
     sections: [
       {
-        subtitle: "1. Pengertian Sistem Ubah",
+        subtitle: "1. Pengertian Sistem Industri",
         content: `
           <p>Sistem Industri adalah disiplin ilmu rekayasa yang menerapkan prinsip-prinsip sistem untuk merancang, 
           meningkatkan, dan mengelola kompleksitas operasi suatu organisasi, baik itu pabrik manufaktur maupun penyedia jasa
